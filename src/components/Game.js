@@ -54,21 +54,24 @@ const handleBoxClicked = (index, number) => {
 
 
   return (
-    <div className="game-container">
-      <h1 className="game-title">GAmE YO</h1>
-      <h3 className="tries">Tries: {tries}</h3>
-      {gameOver ? (
-        <h2 className="game-over">🎉 You matched all pairs! 🎉</h2>
-      ) : (
-        <Boxes
-          boxArray={boxArray}
-          handleBoxClicked={handleBoxClicked}
-          matchedArray={matchedArray}
-          pair={pair}
-        />
-      )}
-    </div>
-  );
+  <div className="game-container">
+    <h1 className="game-title">GAmE YO</h1>
+    <h3 className="tries">Tries: {tries}</h3>
+    <h4 className="mode">Mode: {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</h4>
+
+    {gameOver ? (
+      <h2 className="game-over">🎉 You matched all pairs! 🎉</h2>
+    ) : (
+      <Boxes
+        boxArray={boxArray}
+        handleBoxClicked={handleBoxClicked}
+        matchedArray={matchedArray}
+        pair={pair}
+      />
+    )}
+  </div>
+);
+
 };
 
 export default Game;
