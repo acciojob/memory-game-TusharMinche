@@ -56,8 +56,7 @@ const handleBoxClicked = (index, number) => {
   return (
   <div className="game-container">
     <h1 className="game-title">GAmE YO</h1>
-    <h3 className="tries">Tries: {tries}</h3>
-    <h4 className="mode">Mode: {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</h4>
+    <h4 className="tries">Tries: {tries}</h4>
 
     {gameOver ? (
       <h2 className="game-over">🎉 You matched all pairs! 🎉</h2>
