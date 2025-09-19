@@ -13,7 +13,7 @@ const Boxes = ({ boxArray, handleBoxClicked, matchedArray, pair }) => {
             className="box"
             onClick={() => handleBoxClicked(i, boxNumber)}
           >
-            {isMatched || isClicked ? boxNumber : ""}
+            <span>{isMatched || isClicked ? boxNumber : ""}</span>
           </div>
         );
       })}
