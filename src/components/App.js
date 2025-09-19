@@ -15,7 +15,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="App">
       {gameStarted ? (
         <Game difficulty={difficulty} />
       ) : (
@@ -58,7 +58,7 @@ const App = () => {
           </button>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

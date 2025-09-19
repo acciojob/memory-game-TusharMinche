@@ -45,7 +45,6 @@ const handleBoxClicked = (index, number) => {
 
     setTries((prev) => prev + 1);
 
-    // reset after short delay
     setTimeout(() => {
       setPair([]);
     }, 800);
